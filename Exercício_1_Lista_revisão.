@@ -1,0 +1,46 @@
+/* 1) Criar um algoritmo que leia três valores inteiros: a,b e c. Após a leitura destes dados exiba o nome da
+variável em ordem crescente. Obs: considerar todas as possíveis entradas.*/
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+//Resolução: 
+
+#include <stdio.h>
+
+int main(){
+
+    int a, b, c;
+
+printf("Digite o valor de A:");
+scanf("%d", &a);
+printf("Digite o valor de B:");
+scanf("%d", &b);
+printf("Digite o valor de C:");
+scanf("%d", &c);
+
+int ord;
+
+if(a > b){
+    ord = a;
+    a = b;
+    b = ord;
+}
+if(b > c){
+    ord = b;
+    b=c;
+    c=ord;
+}
+if(a > b){
+    ord = a;
+    a = b;
+    b = ord;
+}
+
+ printf("valores em ordem crescente %d, %d, %d\n", a, b, c);
+
+ return 0;
+
+
+}
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
